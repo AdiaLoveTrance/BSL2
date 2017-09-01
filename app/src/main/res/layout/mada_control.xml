@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:orientation="vertical" 
+    android:background="#ff666666">
+
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="方向  ："
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp"/>
+            <RadioGroup 
+                android:id="@+id/rg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="8dp">
+                <RadioButton 
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正转"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+                <RadioButton 
+                    android:id="@+id/rb2"
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="反转"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+            </RadioGroup>
+        </TableRow>
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+           
+            <TextView 
+                android:text="转速 ："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="8dp"/>
+            <SeekBar 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pb1"
+                android:max="100"
+                 />
+        </TableRow>
+           <Button 
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="确定"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>"
+    </TableLayout>
+ 
+    </LinearLayout>
